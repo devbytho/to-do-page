@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced ToDo App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-container">
+  <header>
+    <h1>My To-Do List</h1>
+    <div id="daily-summary">
+      <h3>Today</h3>
+      <p id="summary-text">0/0 tasks completed</p>
+    </div>
+  </header>
+
+  <main>
+    <ul id="task-list"></ul>
+  </main>
+
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+
+  <button id="add-task-btn">Add Task</button>
+
+  <!-- Task Modal -->
+  <div id="task-modal" class="hidden">
+    <div class="modal-content">
+      <h3>New Task</h3>
+      <input id="task-name" type="text" placeholder="Task name">
+      <input id="task-date" type="date">
+      <input id="task-time" type="time">
+      <textarea id="task-notes" placeholder="Optional notes"></textarea>
+      <div class="modal-buttons">
+        <button id="save-task">Save</button>
+        <button id="cancel-task">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<canvas id="confetti-canvas"></canvas>
+<script type="module" src="script.js" defer></script>
+</body>
+</html>
